@@ -89,7 +89,7 @@ class ProductRepositoryTests {
         repo.save(product2)
 
         val productsFromRepo = repo.findAll();
-        Assertions.assertTrue(products.size == 2 )
+        Assertions.assertTrue(productsFromRepo.size == 2 )
 
         Assertions.assertTrue(products.all { product -> productsFromRepo.contains(product) })
 

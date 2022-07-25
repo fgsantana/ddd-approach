@@ -1,6 +1,7 @@
 package com.fgsantana.dddapproach.domain.entity
 
 data class Customer(val id: Long?, var name: String){
+
     var address: Address? = null
 
     var active: Boolean = false
@@ -36,6 +37,21 @@ data class Customer(val id: Long?, var name: String){
     fun addRewardPoints(points: Double){ this.rewardPoints+=points }
 
     fun isActive(): Boolean = this.active
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as Customer
+
+        if (id != other.id) return false
+        if (name != other.name) return false
+        if (address != other.address) return false
+        if (active != other.active) return false
+        if (rewardPoints != other.rewardPoints) return false
+
+        return true
+    }
 
 }
 

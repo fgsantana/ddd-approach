@@ -5,7 +5,7 @@ import javax.persistence.Entity
 import javax.persistence.Column
 
 @Entity(name = "customer")
-class CustomerModel (
+data class CustomerModel (
     @Id
     val id: Long?,
 
@@ -29,4 +29,4 @@ class CustomerModel (
 
     @Column(name ="reward_points")
     val rewardPoints: Double,
-    ) {}
+    )

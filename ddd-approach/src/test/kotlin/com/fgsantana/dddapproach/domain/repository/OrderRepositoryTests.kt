@@ -154,7 +154,7 @@ class OrderRepositoryTests {
 
 
         val ordersFromRepo = repo.findAll();
-        Assertions.assertTrue(orders.size == 2 )
+        Assertions.assertTrue(ordersFromRepo.size == 2 )
         Assertions.assertTrue(orders.all{ order -> ordersFromRepo.contains(order)})
 
     }

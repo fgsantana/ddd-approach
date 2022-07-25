@@ -1,6 +1,5 @@
 package com.fgsantana.dddapproach.domain.entity
 
-
 data class Order(val id: Long?, var customerId: Long?, var items: MutableList<OrderItem>) {
     init { validate() }
 

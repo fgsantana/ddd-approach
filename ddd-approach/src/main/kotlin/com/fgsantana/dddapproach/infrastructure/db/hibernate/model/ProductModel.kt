@@ -15,4 +15,4 @@ class ProductModel(
     @Column
     val price : Double,
 
-    ) {}
+    )

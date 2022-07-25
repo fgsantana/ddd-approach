@@ -32,6 +32,8 @@ class CustomerRepository (val repo: CustomerORMRepository) : CustomerRepositoryI
 
     private fun toEntity(customerModel: CustomerModel) : Customer{
         val customer = Customer(customerModel.id,customerModel.name);
+        customer.active = customerModel.active
+        customer.rewardPoints = customerModel.rewardPoints
         val address  = Address(customerModel.street,customerModel.number,customerModel.zip,customerModel.city);
         customer.changeAddress(address)
         return customer;
