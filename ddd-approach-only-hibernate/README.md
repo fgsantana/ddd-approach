@@ -6,3 +6,4 @@
 - Hibernate
 - MySQL
 - JUnit 5
+- MockK
