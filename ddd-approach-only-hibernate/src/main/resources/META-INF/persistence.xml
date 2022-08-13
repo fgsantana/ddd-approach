@@ -6,10 +6,10 @@
 
     <persistence-unit name="com.fgsantana.dddapproach">
         <description>Hibernate EntityManager Demo</description>
-        <class>com.fgsantana.dddapproach.infrastructure.db.hibernate.model.CustomerModel</class>
-        <class>com.fgsantana.dddapproach.infrastructure.db.hibernate.model.ProductModel</class>
-        <class>com.fgsantana.dddapproach.infrastructure.db.hibernate.model.OrderModel</class>
-        <class>com.fgsantana.dddapproach.infrastructure.db.hibernate.model.OrderItemModel</class>
+        <class>com.fgsantana.dddapproach.infrastructure.customer.repository.hibernate.CustomerModel</class>
+        <class>com.fgsantana.dddapproach.infrastructure.product.repository.hibernate.ProductModel</class>
+        <class>com.fgsantana.dddapproach.infrastructure.order.repository.hibernate.OrderModel</class>
+        <class>com.fgsantana.dddapproach.infrastructure.order.repository.hibernate.OrderItemModel</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
